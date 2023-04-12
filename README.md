@@ -1,6 +1,4 @@
 - 👋 Hi, I’m @SanthoshSiddegowda
 
-<!---
-SanthoshSiddegowda/SanthoshSiddegowda is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+![santhosh's github stats](https://github-readme-stats.vercel.app/api?username=SanthoshSiddegowda&show_icons=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SanthoshSiddegowda&layout=compact&hide=css)](https://github.com/anuraghazra/github-readme-stats)

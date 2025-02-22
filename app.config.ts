@@ -12,9 +12,9 @@ export default defineAppConfig({
     header: {
       position: 'right', // possible value are : | 'left' | 'center' | 'right'
       logo: {
-        path: '/logo.svg', // path of the logo
-        pathDark: '/logo-dark.svg', // path of the logo in dark mode, leave this empty if you want to use the same logo
-        alt: 'Santhosh J S' // alt of the logo
+        path: 'https://i.ibb.co/MxjbHnXY/image-2-removebg-preview-1.png', // path of the logo
+        pathDark: 'https://i.ibb.co/MxjbHnXY/image-2-removebg-preview-1.png', // path of the logo in dark mode, leave this empty if you want to use the same logo
+        alt: '' // alt of the logo
       }
     },
     footer: {

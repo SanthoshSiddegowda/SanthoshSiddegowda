@@ -6,8 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/devtools'
   ],
 
-  compatibilityDate: '2025-02-20',
-
   app: {
     head: {
       htmlAttrs: {
@@ -22,12 +20,10 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [
         '/',
-        '/contact'
+        '/articles'
       ]
     }
   },
 
-  colorMode: {
-    preference: 'light'
-  }
+  compatibilityDate: '2025-02-20',
 })

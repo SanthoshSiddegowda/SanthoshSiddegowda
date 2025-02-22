@@ -11,24 +11,21 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       }
-    }
+    },
+    baseURL: '/'
   },
 
-  // Add nitro config for Amplify deployment
+  // Static site generation settings
   nitro: {
-    preset: 'node-server',
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/articles'
-      ]
+    preset: 'static',
+    output: {
+      dir: '.output/public',
+      publicDir: 'public'
     }
   },
 
-  // Add server configuration
-  ssr: true,
-  experimental: {
-    payloadExtraction: false
+  // Ensure static generation
+  routeRules: {
+    '/**': { prerender: true }
   }
 })

@@ -14,8 +14,9 @@ export default defineNuxtConfig({
     }
   },
 
-  // Add nitro config for static generation
+  // Add nitro config for Amplify deployment
   nitro: {
+    preset: 'node-server',
     prerender: {
       crawlLinks: true,
       routes: [
@@ -25,5 +26,9 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2025-02-20',
+  // Add server configuration
+  ssr: true,
+  experimental: {
+    payloadExtraction: false
+  }
 })

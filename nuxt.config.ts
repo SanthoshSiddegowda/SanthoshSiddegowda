@@ -15,16 +15,12 @@ export default defineNuxtConfig({
     baseURL: '/'
   },
 
-  // Static site generation settings
+  // Server configuration for EC2
   nitro: {
-    preset: 'static',
-    output: {
-      dir: '.output/public',
-      publicDir: 'public'
-    }
+    preset: 'node-server',
   },
 
-  // Ensure static generation
+  // Static site generation settings
   routeRules: {
     '/**': { prerender: true }
   }

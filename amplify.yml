@@ -7,9 +7,9 @@ frontend:
         - pnpm install
     build:
       commands:
-        - pnpm run generate
+        - pnpm run build
   artifacts:
-    baseDirectory: .output/public
+    baseDirectory: .output
     files:
       - '**/*'
   cache:

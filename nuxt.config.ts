@@ -4,8 +4,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/plausible',
-    '@nuxt/devtools',
-    '@nuxtjs/sitemap'
+    '@nuxt/devtools'
   ],
 
   app: {
@@ -53,24 +52,12 @@ export default defineNuxtConfig({
 
   // Server configuration for EC2
   nitro: {
-    preset: 'static',
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/articles',
-        '/articles/code-police-journey'
-      ]
-    }
+    preset: 'node-server'
   },
 
   // Static site generation settings
   routeRules: {
-    '/**': { prerender: true }
-  },
-
-  experimental: {
-    payloadExtraction: false
+    '/**': { cors: true }
   },
 
   // Content module configuration
@@ -81,32 +68,7 @@ export default defineNuxtConfig({
     }
   },
 
-  // Add sitemap configuration
-  sitemap: {
-    hostname: 'https://santhoshsiddegowda.com',
-    gzip: true,
-    exclude: [
-      '/404'
-    ],
-    urls: [
-      {
-        loc: '/',
-        lastmod: new Date().toISOString(),
-        changefreq: 'daily',
-        priority: 1
-      },
-      {
-        loc: '/articles',
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: 0.8
-      },
-      {
-        loc: '/articles/code-police-journey',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.6
-      }
-    ]
+  experimental: {
+    inlineSSRStyles: false
   }
 })

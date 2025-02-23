@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/articles',
-        '/articles/**'
+        '/articles/code-police-journey'
       ]
     }
   },
@@ -36,5 +36,13 @@ export default defineNuxtConfig({
 
   experimental: {
     payloadExtraction: false
+  },
+
+  // Content module configuration
+  content: {
+    documentDriven: true,
+    navigation: {
+      fields: ['title', 'description', '_path']
+    }
   }
 })

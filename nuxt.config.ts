@@ -52,12 +52,24 @@ export default defineNuxtConfig({
 
   // Server configuration for EC2
   nitro: {
-    preset: 'node-server'
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/articles',
+        '/articles/code-police-journey'
+      ]
+    }
   },
 
   // Static site generation settings
   routeRules: {
-    '/**': { cors: true }
+    '/**': { prerender: true }
+  },
+
+  experimental: {
+    payloadExtraction: false
   },
 
   // Content module configuration
@@ -66,9 +78,5 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['title', 'description', '_path']
     }
-  },
-
-  experimental: {
-    inlineSSRStyles: false
   }
 })

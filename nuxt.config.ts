@@ -58,7 +58,8 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/articles',
-        '/articles/code-police-journey'
+        '/articles/code-police-journey',
+        '/articles/code-police-ai-code-reviewer'
       ]
     }
   },

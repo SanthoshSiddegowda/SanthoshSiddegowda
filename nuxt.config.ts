@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   extends: '@nuxt-themes/alpine',
+  
 
   modules: [
     '@nuxtjs/plausible',
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
   // Server configuration for EC2
   nitro: {
     preset: 'node-server',
+    compatibilityDate: '2025-02-22'
   },
 
   // Static site generation settings

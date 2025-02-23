@@ -18,12 +18,23 @@ export default defineNuxtConfig({
 
   // Server configuration for EC2
   nitro: {
-    preset: 'node-server',
-    compatibilityDate: '2025-02-22'
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/articles',
+        '/articles/**'
+      ]
+    }
   },
 
   // Static site generation settings
   routeRules: {
     '/**': { prerender: true }
+  },
+
+  experimental: {
+    payloadExtraction: false
   }
 })

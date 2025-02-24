@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt-themes/alpine": "1.5.3",
     "@nuxtjs/plausible": "0.2.1",
+    "vue-gtag-next": "^1.14.0",
     "@types/node": "^20.0.0",
     "@types/vue": "^2.0.0",
     "nuxt": "3.8.2",

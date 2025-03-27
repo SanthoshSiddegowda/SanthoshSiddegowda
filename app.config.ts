@@ -4,10 +4,8 @@ export default defineAppConfig({
     title: 'Santhosh J S',
     description: 'Software Engineer with expertise in Full Stack Development and Cloud Technologies',
     image: {
-      src: '/social-card-preview.jpg',
-      alt: 'An image showcasing my project',
-      width: 400,
-      height: 300
+      src: 'https://res.cloudinary.com/just-photos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1743078687/santhosh_siddegowda_wdkp3v.jpg',
+      alt: 'santhosh siddegowda',
     },
     header: {
       position: 'right', // possible value are : | 'left' | 'center' | 'right'
@@ -23,7 +21,7 @@ export default defineAppConfig({
         repository: 'https://www.github.com/santhoshsiddegowda' // our github repository
       },
       navigation: false, // possible value are : true | false
-      alignment: 'center', // possible value are : 'none' | 'left' | 'center' | 'right'
+      alignment: 'left', // possible value are : 'none' | 'left' | 'center' | 'right'
       message: 'Follow me on' // string that will be displayed in the footer (leave empty or delete to disable)
     },
     socials: {

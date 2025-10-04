@@ -47,3 +47,7 @@ pnpm-debug.log*
 *.local
 .vercel
 .netlify
+
+# MCP
+.playwright-mcp
+

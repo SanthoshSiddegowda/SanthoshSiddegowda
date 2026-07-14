@@ -47,8 +47,9 @@ css({
       display: 'grid',
       gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
       gap: '{space.8}',
+      alignItems: 'start', // text column aligned to top
       '@lg': {
-        gridTemplateColumns: '1fr 1fr', // 50-50 split
+        gridTemplateColumns: '1.5fr 1fr', // text wider, image column smaller
       },
       '.title': {
         fontSize: '{text.4xl.fontSize}',
@@ -62,6 +63,10 @@ css({
       },
       img: {
         width: '100%',
+        maxWidth: '25vw',
+        maxHeight: '75vh',
+        objectFit: 'cover',
+        justifySelf: 'center',
         height: 'auto',
         borderRadius: '{radii.md}',
         '&.left': {

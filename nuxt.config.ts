@@ -30,7 +30,10 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-        { rel: 'manifest', href: '/site.webmanifest' }
+        { rel: 'manifest', href: '/site.webmanifest' },
+        { rel: 'alternate', type: 'application/rss+xml', title: 'Santhosh J S', href: '/rss.xml' },
+        { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' },
+        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/geist@5/index.css' }
       ],
       script: [
         {
@@ -58,6 +61,7 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/articles',
+        '/rss.xml',
         '/articles/code-police-journey',
         '/articles/code-police-ai-code-reviewer'
       ]
